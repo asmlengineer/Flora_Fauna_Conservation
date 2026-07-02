@@ -1,0 +1,254 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f8f2;
+    color:#333;
+    line-height:1.6;
+}
+
+/*================ HEADER ================*/
+
+header{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+/*================ HERO ================*/
+
+.hero{
+    height:420px;
+    background:url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-content{
+    width:80%;
+    max-width:750px;
+    background:rgba(0,0,0,0.55);
+    color:white;
+    padding:40px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.hero-content h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:18px;
+}
+
+/*================ COMMON SECTION ================*/
+
+.section{
+    width:90%;
+    margin:60px auto;
+}
+
+.section-title{
+    text-align:center;
+    color:#2e7d32;
+    font-size:36px;
+    margin-bottom:40px;
+}
+
+/*================ ABOUT ================*/
+
+.about{
+    display:flex;
+    flex-wrap:wrap;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    flex:1;
+    width:100%;
+    max-width:500px;
+    border-radius:12px;
+}
+
+.about-content{
+    flex:1;
+}
+
+.about-content h2{
+    color:#2e7d32;
+    margin-bottom:20px;
+}
+
+.about-content p{
+    text-align:justify;
+    margin-bottom:15px;
+}
+
+/*================ MISSION VISION ================*/
+
+.mission-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.box{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 12px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.box:hover{
+    transform:translateY(-8px);
+}
+
+.box h3{
+    color:#2e7d32;
+    margin:20px 0;
+}
+
+.box p{
+    text-align:justify;
+}
+
+/*================ VALUES ================*/
+
+.values{
+    background:#e8f5e9;
+    padding:50px;
+    border-radius:12px;
+}
+
+.value-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.value{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+.value h3{
+    color:#2e7d32;
+    margin:15px 0;
+}
+
+/*================ TEAM ================*/
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.member{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    transition:.3s;
+    text-align:center;
+}
+
+.member:hover{
+    transform:translateY(-8px);
+}
+
+.member img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.member h3{
+    margin-top:20px;
+    color:#2e7d32;
+}
+
+.member p{
+    padding:10px 20px 25px;
+}
+
+/*================ CTA ================*/
+
+.cta{
+    background:linear-gradient(135deg,#2e7d32,#1b5e20);
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.cta h2{
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+.cta p{
+    width:80%;
+    max-width:700px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+.cta button{
+    padding:15px 35px;
+    background:#8bc34a;
+    color:#1b5e20;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.cta button:hover{
+    background:#aed581;
+}
+
+/*================ FOOTER ================*/
+
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/*================ RESPONSIVE ================*/
+
+@media(max-width:768px){
+
+.hero-content h2{
+    font-size:30px;
+}
+
+.about{
+    flex-direction:column;
+}
+
+}
